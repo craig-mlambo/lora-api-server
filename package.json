@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "fastify": "^5.10.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "node app.js",
+    "start": "node app.js"
+  }
+}
