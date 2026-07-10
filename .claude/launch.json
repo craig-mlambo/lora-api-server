@@ -5,7 +5,7 @@
       "name": "lora-api-server",
       "runtimeExecutable": "node",
       "runtimeArgs": ["app.js"],
-      "port": 3011
+      "port": 3012
     }
   ]
 }
