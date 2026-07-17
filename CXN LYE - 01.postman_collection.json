@@ -1,0 +1,139 @@
+{
+  "info": {
+    "_postman_id": "bab1f222-7069-44ae-adce-82d0c1e78084",
+    "name": "CXN LYE",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12766181"
+  },
+  "item": [
+    {
+      "name": "Get TTN Readings",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "NNSXS.KSSEFA2NQ4FZ3MWPANHNLWQKLDOIPSKCYLCHSLY.NDIGRL75HM5ID7YV3VPNFBQ34APOWSQWHGWCMEW3GFKSJ6CDLZAQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "text/event-stream",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "https://eu1.cloud.thethings.network/api/v3/as/applications/lye-application-01/packages/storage/uplink_message?last=24h",
+          "protocol": "https",
+          "host": [
+            "eu1",
+            "cloud",
+            "thethings",
+            "network"
+          ],
+          "path": [
+            "api",
+            "v3",
+            "as",
+            "applications",
+            "lye-application-01",
+            "packages",
+            "storage",
+            "uplink_message"
+          ],
+          "query": [
+            {
+              "key": "last",
+              "value": "24h"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Locco Water TTN Readings",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"test@gatewaystream.com\",// test@gatewaystream.com \"craigkayz@gmail.com\",//\"dev@gatewaystream.com\",\n  \"password\": \"G8way2024\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3012/api/ttn/uplinks?last=24h",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3012",
+          "path": [
+            "api",
+            "ttn",
+            "uplinks"
+          ],
+          "query": [
+            {
+              "key": "last",
+              "value": "24h"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Locco Water TTN Readings By Device",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"test@gatewaystream.com\",// test@gatewaystream.com \"craigkayz@gmail.com\",//\"dev@gatewaystream.com\",\n  \"password\": \"G8way2024\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3012/api/ttn/uplinks?last=24h",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3012",
+          "path": [
+            "api",
+            "ttn",
+            "uplinks"
+          ],
+          "query": [
+            {
+              "key": "last",
+              "value": "24h"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+    "last": "24h",
+    "deviceId": null,
+    "count": 1,
+    "uplinks": [
+        {
+            "end_device_ids": {
+                "device_id": "lye-yellow-device-5000240",
+                "application_ids": {
+                    "application_id": "lye-application-01"
+                },
+                "dev_eui": "8CF957200016C7D6",
+                "dev_addr": "260B3901"
+            },
+            "received_at": "2026-07-14T07:13:05.293302198Z",
+            "uplink_message": {
+                "f_port": 10,
+                "f_cnt": 6,
+                "frm_payload": "/2gQQAIAUDEDJYEkkBLXKwAAAAArAAAAACwAAAAANQAAAAB2GABBEAkUByYgAAIAgxY=",
+                "decoded_payload": {
+                    "bytes": [
+                        255,
+                        104,
+                        16,
+                        64,
+                        2,
+                        0,
+                        80,
+                        49,
+                        3,
+                        37,
+                        129,
+                        36,
+                        144,
+                        18,
+                        215,
+                        43,
+                        0,
+                        0,
+                        0,
+                        0,
+                        43,
+                        0,
+                        0,
+                        0,
+                        0,
+                        44,
+                        0,
+                        0,
+                        0,
+                        0,
+                        53,
+                        0,
+                        0,
+                        0,
+                        0,
+                        118,
+                        24,
+                        0,
+                        65,
+                        16,
+                        9,
+                        20,
+                        7,
+                        38,
+                        32,
+                        0,
+                        2,
+                        0,
+                        131,
+                        22
+                    ]
+                },
+                "rx_metadata": [
+                    {
+                        "gateway_ids": {
+                            "gateway_id": "eui-41374e4b7f494a36",
+                            "eui": "41374E4B7F494A36"
+                        },
+                        "time": "2026-07-14T07:13:04.899477Z",
+                        "timestamp": 1192644068,
+                        "rssi": -95,
+                        "channel_rssi": -95,
+                        "snr": 12,
+                        "received_at": "2026-07-14T07:13:05.084554267Z"
+                    }
+                ],
+                "settings": {
+                    "data_rate": {
+                        "lora": {
+                            "bandwidth": 125000,
+                            "spreading_factor": 9,
+                            "coding_rate": "4/5"
+                        }
+                    },
+                    "frequency": "868100000",
+                    "timestamp": 1192644068,
+                    "time": "2026-07-14T07:13:04.899477Z"
+                },
+                "received_at": "2026-07-14T07:13:05.086693283Z",
+                "confirmed": true,
+                "consumed_airtime": "0.390144s",
+                "network_ids": {
+                    "net_id": "000013",
+                    "ns_id": "EC656E0000000181",
+                    "tenant_id": "ttn",
+                    "cluster_id": "eu1",
+                    "cluster_address": "eu1.cloud.thethings.network"
+                }
+            },
+            "decoded": {
+                "meter_type": "cold_water",
+                "serial": "25033150000240",
+                "control": "0x81",
+                "di": "1290",
+                "seq": 215,
+                "cumulative_flow": {
+                    "value": 0,
+                    "unit": "m3",
+                    "unit_byte": 43
+                },
+                "settlement_flow": {
+                    "value": 0,
+                    "unit": "m3",
+                    "unit_byte": 43
+                },
+                "reverse_flow": {
+                    "value": 0,
+                    "unit": "L",
+                    "unit_byte": 44
+                },
+                "instant_flow": {
+                    "value": 0,
+                    "unit": "flow_rate",
+                    "unit_byte": 53
+                },
+                "extra_bytes": [
+                    118,
+                    24,
+                    0
+                ],
+                "meter_time": "2026-07-14T09:10:41",
+                "status": 512,
+                "checksum_ok": true
+            }
+        }
+    ]
+}
